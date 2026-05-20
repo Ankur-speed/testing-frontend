@@ -6,19 +6,18 @@ app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
 
-//create one more route /api/data that returns json data
-app.get('/api/data', (req, res) => {
+app.get('/api/data', (req, res) => {        
   const data = { message: 'Hello, API!' };
   res.json(data);
-});
+}); 
 
-// my new commit // poorva
-//create one more route /api/user that returns json data with name and age
-app.get('/api/user', (req, res) => {
-  const user = { name: 'John Doe', age: 30 };
-  res.json(user);
-});
-
+//my new work ankur
+app.get('/api/user', (req, res) => {        
+  const userData = { name: 'John Doe', email: 'john.doe@example.com' };
+  res.json(userData);
+}); 
+//my new work ankurwsfdefeffwefwewfwe
+//console.log('This is a test log message.');
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
